@@ -1,0 +1,439 @@
+#    ____       __                __  __      __       _____
+#   / __ \___  / /_  ___  _____  / / / /_  __/ /_     |__  /
+#  / / / / _ \/ / / / / |/_/ _ \/ /_/ / / / / __ \     /_ <
+# / /_/ /  __/ / /_/ />  </  __/ __  / /_/ / /_/ /   ___/ /
+#/_____/\___/_/\__,_/_/|_|\___/_/ /_/\__,_/_.___/   /____/
+#
+# AUTHOR: ItzSave
+# WIKI: https://docs.zithium.net/other-plugins/deluxehub
+# Copyright (c) 2021 - 2025 Zithium Studios. All rights reserved.
+#--------
+# CUSTOM MENUS
+#   You can add more menus to the "DeluxeHub/menus" directory,
+#   copy and paste the default, server selector, menu and edit the file.
+#   Use the name of the file as the action ID.
+#--------
+# BUILT IN PLUGIN PLACEHOLDERS:
+#
+#   %player% - Returns player name
+#   %location% - Returns player location
+#   %online% - Returns number of players online
+#   %online_max% - Returns number of max player slots
+# 
+#        *** USE PLACEHOLDERAPI TO GET MORE ***
+#  (https://www.spigotmc.org/resources/placeholderapi.6245/)
+#--------
+# ACTIONS:
+#
+# [MESSAGE] - Send a message to the player
+# [BROADCAST] - Broadcast a message to everyone
+# [TITLE] e.g. MainTitle;Subtitle;FadeIn;Stay:FadeOut - Send the player a title message
+# [ACTIONBAR] Send an actionbar message
+# [SOUND] - Send the player a sound
+# [COMMAND] - Execute a command as the player
+# [CONSOLE] - Execute a command as console
+# [GAMEMODE] - Change a players' gamemode
+# [PROXY] - Send a player to a server
+# [EFFECT] e.g. EFFECT;LEVEL - Give a potion effect
+# [MENU] - Open a menu from (plugins/DeluxeHub/menus)
+# [CLOSE] - Close an open inventory GUI
+#--------
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | GENERAL SETTINGS                         |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# Check for latest SpigotMC updates (recommended).
+check-updates: true
+
+# Disable specific worlds
+disabled-worlds:
+  # Should we invert the list making it a whitelist rather than a blacklist?
+  invert: false
+  # List your disabled worlds HERE or "worlds: []" to disable
+  worlds:
+    - world_nether
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | ANTI-WORLD DOWNLOADER                    | 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+# Prevent users downloading your world via the world downloader mod
+anti_wdl:
+  # Should AntiWDL be enabled?
+  enabled: true
+
+  # Should players with 'deluxehub.antiwdl.alert' will be notified?
+  notify_admins: true
+
+  # There is no need to kick the player if he is running WDL as our system hooks into the mod to prevent a world download
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | SCOREBOARD                               |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+scoreboard:
+  # Should the scoreboard feature be enabled?
+  enabled: true
+
+  # Should we delay showing the scoreboard?
+  # Value in ticks (20 ticks = 1 second), 0 to disable
+  display_delay:
+    server_enter: 60 # 3 seconds
+    world_change: 40 # 2 seconds
+
+  # Should we refresh the scoreboard (update placeholders)?
+  refresh:
+    enabled: true
+    rate: 200 # In ticks (20 ticks = 1 second)
+
+  title: "&6&l⬢ &e&lVAYS SERV &6&l⬢ &7[&f%online%&7/&f%online_max%&7]"
+  lines:
+    - "&7&m----------------------"
+    - "&6▸ &eИгрок"
+    - "  &f%player%"
+    - ""
+    - "&6▸ &eРанг"
+    - "  &f%vault_rank%"
+    - ""
+    - "&6▸ &eПинг"
+    - "  &f%player_ping% &7мс"
+    - "&7&m----------------------"
+    - "&7&oplay.vaysserv.net"
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# |TABLIST                                   |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+tablist:
+  enabled: true
+  refresh:
+    enabled: true
+    rate: 200
+
+  header:
+    - ""
+    - "&6&l⬢ &e&lVAYS SERV &6&l⬢"
+    - ""
+    - "&f✧ &7Привет, &b&l%player% &7с возвращением! &f✧"
+    - ""
+    - "&7Активных игроков: &a&l%online%&7/&a&l%online_max%"
+    - ""
+
+  footer:
+    - ""
+    - "&6&l⚡ &eНАШИ РЕСУРСЫ &6&l⚡"
+    - ""
+    - " &b◉ &fСайт: &bwww.vaysserv.net"
+    - " &d◉ &fМагазин: &dbuy.vaysserv.net"
+    - " &9◉ &fDiscord: &9discord.gg/vaysserv"
+    - " &a◉ &fВКонтакте: &avk.com/vaysserv"
+    - ""
+    - "&7&oЛучший сервер для настоящих друзей!"
+    - ""
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | AUTO BROADCAST                           |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+announcements:
+  # Should the announcements system be enabled ?
+  enabled: true
+
+  # Delay to send announcements (in seconds)
+  delay: 120
+
+  # How many players should be required to send announcements?
+  required_players: 1
+
+  sound:
+    enabled: true
+    value: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+
+  # Announcement list
+  announcements:
+    welcome:
+      - "&r"
+      - "&6&l⬢ &eИНФОРМАЦИЯ &6&l⬢"
+      - "&fЗаходи на наш сайт: &bwww.vaysserv.net"
+      - "&fТам много полезного!"
+      - "&r"
+    discord:
+      - "&r"
+      - "&9&l⬢ &bDISCORD &9&l⬢"
+      - "&fПрисоединяйся к нашему Discord серверу!"
+      - "&9discord.gg/vaysserv"
+      - "&r"
+    shop:
+      - "&r"
+      - "&d&l⬢ &5МАГАЗИН &d&l⬢"
+      - "&fПоддержи сервер — купи привилегию!"
+      - "&dbuy.vaysserv.net"
+      - "&r"
+    rules:
+      - "&r"
+      - "&a&l⬢ &2ПРАВИЛА &a&l⬢"
+      - "&fУважай других игроков и администрацию"
+      - "&fИграй честно и получай удовольствие!"
+      - "&r"
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | LAUNCHPAD                                |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+launchpad:
+  # Should the launchpad feature be enabled ?
+  enabled: true
+
+  # Launch power for launchpad (max 4.0)
+  launch_power: 3.0
+  launch_power_y: 1.0
+
+  # Top and bottom block required to make a launchpad
+  top_block: STONE_PRESSURE_PLATE
+  bottom_block: REDSTONE_BLOCK
+
+  # Actions executed upon use of a launchpad
+  actions:
+    - '[SOUND] ENTITY_BAT_TAKEOFF'
+    - '[SOUND] ENTITY_FIREWORK_ROCKET_LAUNCH'
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | DOUBLE JUMP                              |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+double_jump:
+  # Should the double jump feature be enabled?
+  enabled: true
+
+  # Launch power for double jump (max 4.0)
+  launch_power: 1.2
+  launch_power_y: 1.0
+
+  # Cooldown time in seconds (0 to disable)
+  cooldown: 2
+
+  # Actions executed upon use of double jump
+  actions:
+    - '[SOUND] ENTITY_BAT_TAKEOFF'
+    - '[SOUND] ENTITY_FIREWORK_ROCKET_TWINKLE'
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | CHAT MANAGEMENT                          |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+command_block:
+  # Should the command blocker feature be enabled?
+  enabled: true
+
+  # List of commands that will be blocked
+  blocked_commands:
+    - /pl
+    - /plugins
+    - /?
+    - /bukkit:?
+    - /bukkit:plugins
+    - /bukkit:pl
+    - /bukkit:help
+    - /ver
+    - /version
+    - /bukkit:version
+    - /bukkit:ver
+    - /icanhasbukkit
+    - /about
+    - /help
+    - /me
+    - /tell
+    - /msg
+
+anti_swear:
+  # Should the anti-swear feature be enabled?
+  enabled: true
+
+  # List of words that will be blocked
+  blocked_words:
+    - fuck
+    - shit
+    - bitch
+    - asshole
+    - cunt
+    - nigger
+    - faggot
+    - pizdec
+    - huy
+    - blyat
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | WORLD EVENT SETTINGS                     |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+world_settings:
+
+  # Player
+  disable_hunger_loss: true
+  disable_fall_damage: true
+  disable_player_pvp: true
+  disable_void_death: true
+  disable_fire_damage: true
+  disable_drowning: true
+  disable_off_hand_swap: true # Requires 1.9+
+
+  # Misc
+  disable_weather_change: true
+  disable_death_message: true
+  disable_mob_spawning: true
+
+  # Item entities
+  disable_item_drop: true
+  disable_item_pickup: true
+
+  # Blocks
+  disable_block_break: true
+  disable_block_place: true
+  disable_block_interact: true # Chest, furnace, crop tample, etc
+  disable_block_burn: true
+  disable_block_fire_spread: true
+  disable_block_leaf_decay: true
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | PLAYER JOIN EVENT                        |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+join_leave_messages:
+  # Should deluxehub handle join/quit messages?
+  enabled: true
+
+  # Set to '' if you want silent join/quit messages
+  join_message: "&a&l+ &7%player% &aзашел на сервер"
+  quit_message: "&c&l- &7%player% &cпокинул сервер"
+
+# Actions executed upon join
+join_events:
+  - "[MESSAGE] &8&m----------------------------------------"
+  - "[MESSAGE] &r"
+  - "[MESSAGE] &6&l⬢ &eДобро пожаловать, &b&l%player% &eна VAYS SERV! &6&l⬢"
+  - "[MESSAGE] &r"
+  - "[MESSAGE] &b◉ &fСайт: &bwww.vaysserv.net"
+  - "[MESSAGE] &d◉ &fМагазин: &dbuy.vaysserv.net"
+  - "[MESSAGE] &9◉ &fDiscord: &9discord.gg/vaysserv"
+  - "[MESSAGE] &r"
+  - "[MESSAGE] &a✨ &fИгроков онлайн: &a%online% &f/ &a%online_max%"
+  - "[MESSAGE] &r"
+  - "[MESSAGE] &8&m----------------------------------------"
+  - "[TITLE] &6&lVAYS SERV;&e&l%player%;5;20;5"
+  - "[SOUND] ENTITY_PLAYER_LEVELUP"
+  - "[ACTIONBAR] &a&l⬢ &fДобро пожаловать, &b%player% &a&l⬢"
+
+join_settings:
+  # Should we teleport the player to the spawn point (if set) on join?
+  spawn_join: true
+  # Should we heal the player?
+  heal: true
+  # Should we extinguish the player?
+  extinguish: true
+  # Should we clear their inventory?
+  clear_inventory: false
+  # Spawn a firework on join
+  firework:
+    # Should we send a firework on join?
+    enabled: true
+    # Should we only send the firework on their first join?
+    first_join_only: false
+
+    type: BALL_LARGE
+    power: 1
+    flicker: true
+    trail: true
+    colors:
+      - AQUA
+      - ORANGE
+      - YELLOW
+      - WHITE
+
+custom_join_items:
+  # Should custom join items be enabled?
+  enabled: true
+  # Should we prevent them from moving/dropping the items?
+  disable_inventory_movement: true
+
+  items:
+    server_selector:
+      material: COMPASS
+      amount: 1
+      slot: 0
+      display_name: "&6&l⬢ &eСЕРВЕРА &6&l⬢"
+      lore:
+        - "&7Нажми, чтобы выбрать режим игры!"
+        - "&7Доступно &f6 &7режимов"
+        - ""
+        - "&e&l⚡ КЛИК ⚡"
+      actions:
+        - "[MENU] serverselector"
+        - "[SOUND] BLOCK_NOTE_BLOCK_PLING"
+    
+    player_hider:
+      material: LIME_DYE
+      amount: 1
+      slot: 4
+      display_name: "&d&l⬢ &5ИГРОКИ &d&l⬢"
+      lore:
+        - "&7Кликни, чтобы скрыть/показать игроков"
+        - ""
+        - "&aСейчас видны все игроки"
+      actions:
+        - "[SOUND] ENTITY_EXPERIENCE_ORB_PICKUP"
+    
+    info_book:
+      material: BOOK
+      amount: 1
+      slot: 8
+      display_name: "&b&l⬢ &9ИНФОРМАЦИЯ &b&l⬢"
+      lore:
+        - "&7Информация о сервере и помощь"
+        - ""
+        - "&7Сайт: &fwww.vaysserv.net"
+        - "&7Discord: &fdc.vaysserv.net"
+      actions:
+        - "[MESSAGE] &8&m----------------------------------------"
+        - "[MESSAGE] &r"
+        - "[MESSAGE] &6&l⬢ &eИНФОРМАЦИЯ О СЕРВЕРЕ &6&l⬢"
+        - "[MESSAGE] &r"
+        - "[MESSAGE] &b🌐 &fСайт: &bwww.vaysserv.net"
+        - "[MESSAGE] &d🛒 &fМагазин: &dbuy.vaysserv.net"
+        - "[MESSAGE] &9💬 &fDiscord: &9discord.gg/vaysserv"
+        - "[MESSAGE] &a📋 &fВерсия: &a1.16 - 1.21"
+        - "[MESSAGE] &r"
+        - "[MESSAGE] &7Спасибо, что играешь с нами!"
+        - "[MESSAGE] &8&m----------------------------------------"
+        - "[SOUND] ENTITY_PLAYER_LEVELUP"
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# | PLAYER HIDER                             |
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+player_hider:
+  # Should the player hider feature be enabled?
+  enabled: true
+  # Slot the item should be given to? (0-8)
+  slot: 4
+  # Should we prevent them from moving/dropping the item?
+  disable_inventory_movement: true
+  # Cooldown in seconds (set to 0 to disable)
+  cooldown: 2
+
+  not_hidden:
+    material: LIME_DYE
+    amount: 1
+    display_name: '&d&l⬢ &5ИГРОКИ &7[&aПОКАЗАНЫ&7] &d&l⬢'
+    lore:
+      - '&7Нажми &aПКМ &7чтобы скрыть всех игроков'
+      - '&7Это уменьшит лаги на слабых ПК'
+
+  hidden:
+    material: GRAY_DYE
+    amount: 1
+    display_name: '&d&l⬢ &5ИГРОКИ &7[&cСКРЫТЫ&7] &d&l⬢'
+    lore:
+      - '&7Нажми &aПКМ &7чтобы показать всех игроков'

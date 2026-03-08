@@ -1,0 +1,193 @@
+npcs:
+  44f2e019-894f-4090-8dae-14f7677a55a9:
+    name: One-Block
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#2E8B57:#32CD32>One-Block</gradient> <dark_green>[</dark_green><green>%bungee_oneblock%</green><gray>/100</gray><dark_green>]</dark_green>
+    type: PLAYER
+    location:
+      world: world
+      x: -17.491176277519155
+      y: -58.0
+      z: 18.518552866726374
+      yaw: -89.87805
+      pitch: -2.6538558
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+  3cce3e10-72e7-4b21-afb0-30d5eb8aeddc:
+    name: Vanilla
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#FFD700:#FFA500>Vanilla</gradient><white> [</white><green>%bungee_vanilla%</green><gray>/100</gray><white>]</white>
+    type: PLAYER
+    location:
+      world: world
+      x: -13.50089949713591
+      y: -58.0
+      z: 28.462930143523725
+      yaw: -88.85144
+      pitch: -2.2590096
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://ru-minecraft.ru/uploads/posts/2024-03/1709791953_grassblock-on-planetminecraft-com.png
+      variant: SLIM
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: send_to_server
+          value: vanilla
+  32da8811-fb47-4f85-9ec4-7e84de9d3bd3:
+    name: TNT-Run
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#FF4500:#DC143C>TNT-Run</gradient> <red>[</red><gold>%bungee_tntrun%</gold><gray>/100</gray><red>]</red>
+    type: PLAYER
+    location:
+      world: world
+      x: -19.57394449033005
+      y: -58.0
+      z: 13.479786022357192
+      yaw: -89.953
+      pitch: -1.903787
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://s.namemc.com/i/de37973c656ebe0f.png
+      variant: AUTO
+  a0ee8cfb-00e6-40d4-875e-e5a2b5243b2e:
+    name: Boss-Figth
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#4B0082:#8A2BE2>Boss-Fight</gradient> <dark_purple>[</dark_purple><light_purple>%bungee_bossfight%</light_purple><gray>/100</gray><dark_purple>]</dark_purple>
+    type: PLAYER
+    location:
+      world: world
+      x: -15.5262034742463
+      y: -58.0
+      z: 3.4918051213423706
+      yaw: -89.48071
+      pitch: -2.6143842
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://minecraft-inside.ru/skins/download/194606/
+      variant: SLIM
+  13c4977a-f29f-4c0a-8744-996c77e110d3:
+    name: Color-Run
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <rainbow>Color-Run</rainbow> <light_purple>[</light_purple><aqua>%bungee_colorrun%</aqua><gray>/100</gray><light_purple>]</light_purple>
+    type: PLAYER
+    location:
+      world: world
+      x: -17.516753945107745
+      y: -58.0
+      z: 8.499262767973851
+      yaw: -90.19116
+      pitch: -1.1537259
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://s.namemc.com/i/8a2a44328944568d6.png
+      variant: AUTO
+  470e4abd-e8f1-4b80-b081-401ec01483cf:
+    name: Grief
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#8B0000:#FF4500>Grief</gradient> <dark_red>[</dark_red><red>%bungee_grief%</red><gray>/100</gray><dark_red>]</dark_red>
+    type: PLAYER
+    location:
+      world: world
+      x: -15.500375081531994
+      y: -58.0
+      z: 23.487028085125225
+      yaw: -87.94324
+      pitch: -3.1670363
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://minecraft-inside.ru/skins/download/293273/
+      variant: SLIM
+  0a7cac13-2ef3-46a1-b2ef-21a859deac54:
+    name: Anarchy
+    creator: 470737a1-b8c8-3ece-a95f-f5619c89622d
+    displayName: <gradient:#2F4F4F:#708090>Anarchy</gradient> <dark_gray>[</dark_gray><gray>%bungee_anarchy%</gray><white>/100</white><dark_gray>]</dark_gray>
+    type: PLAYER
+    location:
+      world: world
+      x: -13.488608249636625
+      y: -58.0
+      z: -1.4923442118952173
+      yaw: -88.920654
+      pitch: -1.5879428
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: 20
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: https://s.namemc.com/i/473bb277ab3ec6ed.png
+      variant: SLIM

@@ -1,0 +1,12 @@
+[00:12:45] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] empty_developer (/127.0.0.1:60852) has disconnected
+[00:12:45] [Netty NIO Worker #20/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] empty_developer -> hub has disconnected
+[00:19:31] [Netty NIO Worker #18/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] LORDIC (/26.134.49.98:64465) has disconnected
+[00:19:31] [Netty NIO Worker #18/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] LORDIC -> hub has disconnected
+[00:41:31] [Netty NIO Worker #22/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] LORDIC (/26.134.49.98:55275) has connected
+[00:41:31] [Netty NIO Worker #22/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] LORDIC -> hub has connected
+[01:09:22] [Netty NIO Worker #22/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] LORDIC (/26.134.49.98:55275) has disconnected
+[01:09:22] [Netty NIO Worker #22/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] LORDIC -> hub has disconnected
+[06:28:14] [Netty NIO Worker #23/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] yanfi21 (/26.229.216.255:52901) has connected
+[06:28:14] [Netty NIO Worker #23/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] yanfi21 -> hub has connected
+[06:40:36] [Netty NIO Worker #23/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] yanfi21 (/26.229.216.255:52901) has disconnected
+[06:40:36] [Netty NIO Worker #23/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] yanfi21 -> hub has disconnected

@@ -1,0 +1,92 @@
+[00:05:10] [Server thread/INFO]: [LORDIC: Set own game mode to Creative Mode]
+[00:05:13] [Server thread/INFO]: empty_developer has made the advancement [Cover Me with Diamonds]
+[00:08:27] [Server thread/INFO]: LORDIC issued server command: /kill empty_developer
+[00:08:27] [Server thread/INFO]: [LORDIC: Killed empty_developer]
+[00:09:24] [Server thread/INFO]: LORDIC issued server command: /kill empty_developer
+[00:09:24] [Server thread/INFO]: [LORDIC: Killed empty_developer]
+[00:12:37] [Server thread/INFO]: empty_developer issued server command: /time set day
+[00:12:37] [Server thread/INFO]: [empty_developer: Set the time to 1000]
+[00:12:45] [Server thread/INFO]: empty_developer lost connection: Disconnected
+[00:12:45] [Server thread/INFO]: - empty_developer покинул сервер
+[00:19:31] [Server thread/INFO]: LORDIC lost connection: Disconnected
+[00:19:31] [Server thread/INFO]: - LORDIC покинул сервер
+[00:41:32] [User Authenticator #8/INFO]: UUID of player LORDIC is 24eae24f-8a00-38fc-9244-b243b1dc643f
+[00:41:33] [Server thread/INFO]: + LORDIC зашел на сервер
+[00:41:33] [Server thread/INFO]: LORDIC[/26.134.49.98:50282] logged in with entity id 901 at ([world]42.250327555663034, -51.18328644579349, -42.60242704055)
+[00:41:33] [Server thread/WARN]: [DeluxeHub] Task #4188 for DeluxeHub v3.7.2 generated an exception
+java.lang.NoClassDefFoundError: Could not initialize class net.zithium.deluxehub.utility.reflection.ActionBar
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.actions.ActionbarAction.execute(ActionbarAction.java:18) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.ActionManager.lambda$executeActions$1(ActionManager.java:68) ~[?:?]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.ActionManager.executeActions(ActionManager.java:60) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.module.Module.executeActions(Module.java:60) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.module.modules.player.PlayerListener.lambda$onPlayerJoin$1(PlayerListener.java:125) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.libs.folialib.impl.SpigotImplementation.lambda$runLater$2(SpigotImplementation.java:118) ~[?:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:80) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:474) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1792) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1647) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:473) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1703) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1371) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:392) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Server thread"]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.utility.reflection.ActionBar.<clinit>(ActionBar.java:74) ~[?:?]
+	... 16 more
+[01:09:22] [Server thread/INFO]: LORDIC lost connection: Disconnected
+[01:09:22] [Server thread/INFO]: - LORDIC покинул сервер
+[06:28:15] [User Authenticator #9/INFO]: UUID of player yanfi21 is 1db0c89b-7971-3889-9844-be69cbf8764c
+[06:28:15] [Server thread/INFO]: + yanfi21 зашел на сервер
+[06:28:15] [Server thread/INFO]: yanfi21[/26.229.216.255:54012] logged in with entity id 911 at ([world]14.492534432699076, -59.0, 18.45710722177946)
+[06:28:15] [Server thread/WARN]: [DeluxeHub] Task #4242 for DeluxeHub v3.7.2 generated an exception
+java.lang.NoClassDefFoundError: Could not initialize class net.zithium.deluxehub.utility.reflection.ActionBar
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.actions.ActionbarAction.execute(ActionbarAction.java:18) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.ActionManager.lambda$executeActions$1(ActionManager.java:68) ~[?:?]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.action.ActionManager.executeActions(ActionManager.java:60) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.module.Module.executeActions(Module.java:60) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.module.modules.player.PlayerListener.lambda$onPlayerJoin$1(PlayerListener.java:125) ~[?:?]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.libs.folialib.impl.SpigotImplementation.lambda$runLater$2(SpigotImplementation.java:118) ~[?:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:80) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:474) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1792) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1647) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:473) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1703) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1371) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:392) ~[purpur-1.21.11.jar:1.21.11-2566-0fbf8d2]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Server thread"]
+	at DeluxeHub-3.7.2.jar//net.zithium.deluxehub.utility.reflection.ActionBar.<clinit>(ActionBar.java:74) ~[?:?]
+	... 16 more
+[06:40:36] [Server thread/INFO]: yanfi21 lost connection: Disconnected
+[06:40:36] [Server thread/INFO]: - yanfi21 покинул сервер
+[06:44:12] [Server thread/INFO]: Stopping server
+[06:44:12] [Server thread/INFO]: [DeluxeHub] Disabling DeluxeHub v3.7.2
+[06:44:12] [Server thread/INFO]: [FancyNpcs] Disabling FancyNpcs v2.9.2
+[06:44:12] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.12.2
+[06:44:12] [FancyLogger/INFO]: [FancyNpcs] (Server thread) INFO: FancyNpcs has been disabled.
+[06:44:12] [Server thread/INFO]: Saving players
+[06:44:12] [Server thread/INFO]: Saving worlds
+[06:44:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[06:44:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[06:44:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[06:44:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0,02s
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[06:44:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[06:44:13] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[06:44:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:44:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:44:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[06:44:13] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[06:44:13] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[06:44:13] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[06:44:13] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
